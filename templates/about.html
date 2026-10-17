@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Skill Path AI</title>
+  <meta name="description" content="About Skill Path AI: how the knowledge agent works, its workflow, limitations, and technology stack.">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand">Skill Path AI</a>
+      <nav class="nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="#learning-paths" class="nav-link">Learning Paths</a>
+        <a href="/about" class="nav-link active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="container">
+        <h1>About Skill Path AI</h1>
+
+        <div class="about-card">
+          <h2>Purpose</h2>
+          <p>
+            Skill Path AI is an AI/ML student learning companion and
+            knowledge-based question-answering agent. Its tagline is
+            <strong>“Learn. Build. Grow.”</strong> Students can ask questions
+            about Python, Artificial Intelligence, Machine Learning, Data
+            Science, AI projects, interview preparation, internships, GitHub,
+            and career roadmaps.
+          </p>
+          <p>
+            The agent searches its local knowledge base, identifies the most
+            relevant note, calculates a matching score, shows the source note,
+            and provides an answer based on that source. Everything runs
+            locally — no API key or internet connection is required after
+            dependencies are installed.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h2>How the Knowledge Agent Works</h2>
+          <p>
+            Skill Path AI uses a <strong>Find &rarr; Check &rarr; Answer</strong>
+            workflow:
+          </p>
+          <ol>
+            <li><strong>Find:</strong> The student's question is converted into
+              a TF-IDF vector and compared against every note in the knowledge
+              base.</li>
+            <li><strong>Check:</strong> Cosine similarity measures how closely
+              the question matches each note. The best match is selected and its
+              score is compared against a configurable threshold.</li>
+            <li><strong>Answer:</strong> If the score meets the threshold, the
+              note's text is returned as the answer along with its source and
+              score. Otherwise, a safe fallback message is shown instead of
+              presenting an unrelated note.</li>
+          </ol>
+        </div>
+
+        <div class="about-card">
+          <h2>TF-IDF and Cosine Similarity</h2>
+          <p>
+            <strong>TF-IDF</strong> (Term Frequency–Inverse Document Frequency)
+            converts text into numbers by weighing how important a word is to a
+            note relative to the whole knowledge base. Common words like “the”
+            receive low weight; topic-specific words receive higher weight.
+          </p>
+          <p>
+            <strong>Cosine similarity</strong> measures the angle between the
+            question vector and each note vector. A value of 1 means identical
+            direction (very similar content); 0 means no shared meaningful
+            terms. The result is a similarity score between 0 and 1, shown as a
+            percentage. <strong>This score estimates relevance, not factual
+            correctness.</strong>
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h2>Current Limitations</h2>
+          <ul>
+            <li>Answers are limited to the starter knowledge base in
+              <code>data/knowledge.json</code>.</li>
+            <li>The similarity score measures textual relevance, not factual
+              correctness. Always verify answers for coursework.</li>
+            <li>Some notes are marked as drafts; these carry a warning.</li>
+            <li>Roadmaps and career guidance are general suggestions, not
+              personalized plans based on user data, and do not guarantee jobs,
+              salaries, or outcomes.</li>
+            <li>No external AI model or paid API is used; results depend on the
+              quality and coverage of the local notes.</li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <h2>Technology Stack</h2>
+          <ul>
+            <li>Frontend: HTML5, CSS3, JavaScript</li>
+            <li>Backend: Python with Flask</li>
+            <li>Templates: Jinja2</li>
+            <li>Knowledge storage: JSON files</li>
+            <li>Retrieval: scikit-learn TF-IDF and cosine similarity</li>
+            <li>Testing: Python unittest</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="brand">Skill Path AI</div>
+          <div class="footer-tagline">Learn. Build. Grow.</div>
+        </div>
+        <div class="footer-stack">
+          <div class="footer-column">
+            <strong>Technology Stack</strong>
+            <ul>
+              <li>HTML5, CSS3, JavaScript</li>
+              <li>Python &amp; Flask</li>
+              <li>scikit-learn (TF-IDF + cosine similarity)</li>
+              <li>JSON knowledge base</li>
+              <li>Jinja2 templates</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <strong>Topics</strong>
+            <ul>
+              <li>Python fundamentals</li>
+              <li>AI / Machine Learning</li>
+              <li>Data Science</li>
+              <li>Git &amp; GitHub</li>
+              <li>Career &amp; interviews</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-note">
+          &copy; 2026 Skill Path AI. Starter knowledge base for learning only.
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+[
+  {
+    "id": "py-001",
+    "topic": "Python fundamentals",
+    "keywords": "python, variables, data types, print, input, beginner, syntax",
+    "text": "Python is a high-level, interpreted programming language known for readable syntax. Key fundamentals include variables, data types (int, float, str, bool, list, dict), operators, control flow (if/elif/else, for, while), functions, and modules. Example: print('Hello, Skill Path AI') displays text on the console. Python is dynamically typed, meaning variable types are inferred at runtime.",
+    "status": "verified"
+  },
+  {
+    "id": "py-002",
+    "topic": "Data structures and algorithms",
+    "keywords": "data structures, algorithms, list, tuple, set, dictionary, sorting, searching, big O, complexity",
+    "text": "Common Python data structures include lists (ordered, mutable), tuples (ordered, immutable), sets (unique elements), and dictionaries (key-value pairs). Algorithms are step-by-step procedures for solving problems, such as sorting (sorted, .sort) and searching. Complexity is expressed using Big O notation, which describes how runtime or memory grows with input size.",
+    "status": "verified"
+  },
+  {
+    "id": "np-001",
+    "topic": "NumPy basics",
+    "keywords": "numpy, arrays, ndarray, vectorization, mathematical operations, python",
+    "text": "NumPy provides the ndarray object for efficient numerical computing in Python. Arrays are homogeneous, fixed-size, and support vectorized operations, avoiding slow Python loops. Key operations include array creation (np.array, np.zeros, np.arange), indexing, slicing, reshaping, and broadcasting. NumPy is the foundation of the Python data science stack.",
+    "status": "verified"
+  },
+  {
+    "id": "pd-001",
+    "topic": "Pandas basics",
+    "keywords": "pandas, dataframe, series, data cleaning, csv, data manipulation, python",
+    "text": "Pandas provides DataFrame (2D tabular data) and Series (1D labeled array) objects for data manipulation and analysis. Common tasks include reading CSV files (pd.read_csv), selecting columns and rows, filtering, handling missing values (dropna, fillna), grouping (groupby), and merging datasets. It is built on top of NumPy.",
+    "status": "verified"
+  },
+  {
+    "id": "stats-001",
+    "topic": "Statistics for machine learning",
+    "keywords": "statistics, mean, median, standard deviation, probability, distribution, correlation, hypothesis testing",
+    "text": "Statistics underpins machine learning. Key concepts include measures of central tendency (mean, median, mode), spread (variance, standard deviation), probability distributions (normal, binomial), correlation, and hypothesis testing. Understanding data distribution helps in preprocessing, model selection, and evaluating results.",
+    "status": "verified"
+  },
+  {
+    "id": "viz-001",
+    "topic": "Data visualization",
+    "keywords": "data visualization, matplotlib, seaborn, charts, plots, histogram, scatter, bar chart",
+    "text": "Data visualization communicates insights through charts. Matplotlib is the core plotting library (line, scatter, bar, histogram). Seaborn builds on Matplotlib for statistical visualizations. Effective visualizations have clear labels, titles, legends, and avoid misleading scales. Common plots include histograms for distributions, scatter plots for relationships, and bar charts for categories.",
+    "status": "verified"
+  },
+  {
+    "id": "ml-001",
+    "topic": "Supervised learning",
+    "keywords": "supervised learning, classification, regression, labeled data, scikit-learn, training, prediction",
+    "text": "Supervised learning trains models on labeled data (input-output pairs). Classification predicts discrete categories (e.g., spam vs. not spam), while regression predicts continuous values (e.g., house prices). Common algorithms include logistic regression, decision trees, random forests, support vector machines, and k-nearest neighbors. Scikit-learn provides a consistent fit/predict API.",
+    "status": "verified"
+  },
+  {
+    "id": "ml-002",
+    "topic": "Unsupervised learning",
+    "keywords": "unsupervised learning, clustering, dimensionality reduction, k-means, PCA, unlabeled data",
+    "text": "Unsupervised learning finds patterns in unlabeled data. Clustering groups similar data points (e.g., k-means). Dimensionality reduction reduces feature count while preserving information (e.g., PCA). Common uses include customer segmentation, anomaly detection, and data compression. Results are evaluated using internal metrics rather than ground-truth labels.",
+    "status": "verified"
+  },
+  {
+    "id": "ml-003",
+    "topic": "Model evaluation",
+    "keywords": "model evaluation, accuracy, precision, recall, f1 score, confusion matrix, rmse, mae, train test split",
+    "text": "Model evaluation measures how well a model generalizes to unseen data. Classification metrics include accuracy, precision, recall, F1-score, and confusion matrix. Regression metrics include RMSE, MAE, and R-squared. Data is typically split into training and testing sets (train_test_split) to estimate performance on new data.",
+    "status": "verified"
+  },
+  {
+    "id": "ml-004",
+    "topic": "Overfitting and underfitting",
+    "keywords": "overfitting, underfitting, bias, variance, generalization, regularization, cross-validation",
+    "text": "Overfitting occurs when a model learns training data noise and fails to generalize (high variance). Underfitting occurs when a model is too simple to capture patterns (high bias). Techniques to reduce overfitting include cross-validation, regularization, pruning, early stopping, and collecting more data. The goal is good generalization on unseen data.",
+    "status": "verified"
+  },
+  {
+    "id": "nn-001",
+    "topic": "Neural networks",
+    "keywords": "neural network, neuron, weights, biases, activation function, forward pass, backpropagation",
+    "text": "A neural network consists of layers of interconnected neurons: an input layer, hidden layers, and an output layer. Each connection has a weight, and each neuron applies an activation function (e.g., ReLU, sigmoid) to its weighted sum. Training uses forward propagation to compute predictions and backpropagation to update weights using gradient descent.",
+    "status": "verified"
+  },
+  {
+    "id": "dl-001",
+    "topic": "Deep learning",
+    "keywords": "deep learning, convolutional neural network, recurrent neural network, tensorflow, pytorch, layers",
+    "text": "Deep learning uses neural networks with many hidden layers to learn hierarchical representations. Convolutional Neural Networks (CNNs) excel at image tasks; Recurrent Neural Networks (RNNs) and Transformers handle sequences. Frameworks like TensorFlow/Keras and PyTorch provide tools to build, train, and deploy deep models.",
+    "status": "verified"
+  },
+  {
+    "id": "nlp-001",
+    "topic": "Natural language processing",
+    "keywords": "nlp, natural language processing, tokenization, text preprocessing, sentiment analysis, language models",
+    "text": "Natural Language Processing (NLP) enables computers to understand and generate human language. Common steps include tokenization, lowercasing, removing stopwords, and vectorizing text (e.g., TF-IDF, word embeddings). Applications include sentiment analysis, text classification, named entity recognition, and machine translation.",
+    "status": "verified"
+  },
+  {
+    "id": "genai-001",
+    "topic": "Generative AI fundamentals",
+    "keywords": "generative AI, large language model, transformer, prompt, completion, GPT, artificial intelligence",
+    "text": "Generative AI creates new content such as text, images, code, or audio. Large language models are based on the Transformer architecture and predict the next token in a sequence. Users interact through prompts, and the model generates a completion. Outputs should be reviewed for accuracy, bias, and safety before use.",
+    "status": "verified"
+  },
+  {
+    "id": "rai-001",
+    "topic": "Responsible AI",
+    "keywords": "responsible AI, AI ethics, bias, fairness, transparency, privacy, safety, AI principles",
+    "text": "Responsible AI means building and using AI systems that are fair, transparent, safe, and accountable. Key concerns include mitigating bias in data and models, protecting user privacy, explaining model decisions, and avoiding harmful outputs. Human oversight and testing are essential before deploying AI in real-world settings.",
+    "status": "verified"
+  },
+  {
+    "id": "proj-001",
+    "topic": "Beginner AI/ML projects",
+    "keywords": "ai projects, machine learning projects, beginner projects, portfolio, iris classification, house price prediction",
+    "text": "Good beginner AI/ML projects include iris flower classification, house price prediction, sentiment analysis of movie reviews, handwritten digit recognition, and a movie recommendation system. Start with clean datasets, use scikit-learn, document your workflow in a Jupyter notebook, and publish the code and results on GitHub.",
+    "status": "verified"
+  },
+  {
+    "id": "git-001",
+    "topic": "Git and GitHub",
+    "keywords": "git, github, version control, commit, push, pull, branch, repository, pull request",
+    "text": "Git is a version control system that tracks changes in files. GitHub hosts Git repositories online and supports collaboration. Essential commands include git init, git add, git commit, git push, git pull, and git branch. A pull request proposes changes from one branch to another and enables code review before merging.",
+    "status": "verified"
+  },
+  {
+    "id": "resume-001",
+    "topic": "Resume preparation",
+    "keywords": "resume, cv, resume preparation, skills, projects, education, formatting, job application",
+    "text": "A strong AI/ML resume highlights technical skills (Python, SQL, scikit-learn, Pandas), hands-on projects with links, education, and measurable outcomes. Keep it to one page, use clear section headings, and tailor keywords to each job description. Avoid claiming certifications or experience you do not have.",
+    "status": "verified"
+  },
+  {
+    "id": "interview-001",
+    "topic": "Technical interview preparation",
+    "keywords": "technical interview, interview preparation, coding questions, system design, ml concepts, behavioral",
+    "text": "Technical interviews for AI/ML roles often cover coding problems, Python fundamentals, machine learning concepts, statistics, and project discussions. Practice on paper or whiteboard, explain your thought process, review common algorithms, and prepare concise answers about your projects. Behavioral questions assess teamwork and communication.",
+    "status": "verified"
+  },
+  {
+    "id": "intern-001",
+    "topic": "Internship applications",
+    "keywords": "internship, internship applications, applying, portfolio, networking, cover letter, ai ml internship",
+    "text": "AI/ML internship applications benefit from a GitHub portfolio with completed projects, a tailored resume, and a short cover letter. Apply early, follow application instructions, and prepare to discuss your projects in detail. Networking through LinkedIn and university career centers can also help discover opportunities.",
+    "status": "verified"
+  },
+  {
+    "id": "roadmap-001",
+    "topic": "AI/ML learning roadmap",
+    "keywords": "ai ml roadmap, learning roadmap, career roadmap, study plan, machine learning path",
+    "text": "A suggested beginner AI/ML roadmap: (1) Learn Python fundamentals, (2) Practice data structures and algorithms, (3) Learn NumPy and Pandas for data handling, (4) Study statistics and probability, (5) Learn data visualization, (6) Study supervised and unsupervised learning with scikit-learn, (7) Practice model evaluation, (8) Explore neural networks and deep learning, (9) Build and publish portfolio projects, (10) Prepare resumes and apply for internships. This is general guidance, not a personalized plan.",
+    "status": "draft"
+  },
+  {
+    "id": "career-001",
+    "topic": "Career roadmap",
+    "keywords": "career roadmap, ai career, machine learning career, roles, data scientist, ml engineer",
+    "text": "Common AI/ML career roles include data analyst, data scientist, machine learning engineer, and AI research assistant. Roles typically require programming, statistics, and portfolio evidence. Career paths vary by individual background and local job market. This page provides general guidance only and does not guarantee jobs, salaries, or outcomes.",
+    "status": "draft"
+  },
+  {
+    "id": "ml-000",
+    "topic": "Machine Learning",
+    "keywords": "machine learning, ML, explain machine learning, what is machine learning, artificial intelligence, algorithms, data, predictions",
+    "text": "Machine Learning (ML) is a branch of Artificial Intelligence that enables computers to learn from data and make predictions or decisions without being explicitly programmed for every task. Instead of following hard-coded rules, ML models identify patterns in training data and use those patterns to generalize to new, unseen data. Common types include supervised learning (learning from labeled examples), unsupervised learning (finding patterns in unlabeled data), and reinforcement learning (learning from feedback). Beginner-friendly examples include predicting house prices, classifying emails as spam, and recognizing handwritten digits.",
+    "status": "verified"
+  },
+  {
+    "id": "geo-001",
+    "topic": "Capital of France",
+    "keywords": "France, capital, Paris, geography, country",
+    "text": "Paris is the capital city of France. Located in the north-central part of the country along the Seine River, Paris is France's largest city and its political, cultural, and economic center. It is known for landmarks such as the Eiffel Tower, the Louvre Museum, and Notre-Dame Cathedral.",
+    "status": "verified"
+  },
+  {
+    "id": "pd-002",
+    "topic": "Pandas missing values",
+    "keywords": "Pandas missing values, NaN, null values, missing data, dropna, fillna, isnull, isna, data cleaning",
+    "text": "Missing values in Pandas represent absent or unknown data and are commonly shown as NaN (Not a Number) or None. You can detect missing values using isnull() or isna(), which return a boolean mask indicating which cells are missing. To remove rows or columns with missing values, use dropna(). To replace missing values with a specific value or a computed value such as the mean, use fillna(). Example: df.isnull().sum() counts missing values per column; df.dropna() removes rows with any missing value; df.fillna(0) replaces all missing values with zero. Handling missing values is an important step in data cleaning before analysis or modeling.",
+    "status": "verified"
+  }
+]
