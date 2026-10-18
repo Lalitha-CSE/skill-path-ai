@@ -1,5 +1,16 @@
 # Skill Path AI
 
+## 🚀 Live Demo
+[Click here to try Skill Path AI](https://skill-path-ai-y2ht.onrender.com)
+
+## 📌 About the Project
+Skill Path AI is a Flask-based learning assistant
+that provides relevant answers from a curated knowledge base.
+
+
+
+# Skill Path AI
+
 AI/ML student learning companion and knowledge-based question-answering agent.
 
 **Tagline:** Learn. Build. Grow.
