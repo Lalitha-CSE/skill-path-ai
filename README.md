@@ -7,6 +7,7 @@
 Skill Path AI is a Flask-based learning assistant
 that provides relevant answers from a curated knowledge base.
 
+💻 **GitHub Repository:** [View Source Code](https://github.com/Lalitha-CSE/skill-path-ai)
 
 
 # Skill Path AI
